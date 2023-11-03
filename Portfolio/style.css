@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Exo+2:ital@1&family=Lobster&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background:url(Images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    width: 100%;
+    height: 10vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    z-index: 100000;
+    position: fixed;
+}
+
+nav .logo {
+    width: 25%;
+    text-align: center;
+    font-size: 170%;
+    font-family: 'Crimson Text', serif;
+    transition: 1s;
+}
+
+nav .logo a {
+    text-decoration: none;
+    color: black
+}
+nav .logo a:hover{
+    color: slateblue;
+    transition: 0.4s;
+}
+nav .menu {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav .menu a {
+    position: relative;
+    transition: 0.4s;
+    text-decoration: none;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav .menu a:hover{
+    color: #bd1e1e;
+}
+
+nav .menu a::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: rgba(152, 33, 33, 0.6);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    opacity: 0;
+    transition: 0.2s;
+    pointer-events: none;
+}
+
+nav .menu a:hover::after {
+    opacity: 1;
+}
+
+main {
+    width: 100%;
+    height: 115vh;
+    display: flex;
+    align-items: center;
+    background-image: url(Images/person.png);
+    background-size: 68vh;
+    background-repeat: no-repeat;
+    background-position: 110vh;
+}
+
+section .about {
+    font-size: 5vh;
+    font-weight: bold;
+    padding-left: 20vh;
+}
+
+section .about h1 {
+    font-family: 'Courgette', serif;
+    border-right: 2px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+        typing 3s steps(27) infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+}
+
+section .about h1::first-letter {
+    color: red;
+}
+/*----------about---------*/
+#About{
+    display: flex;
+    padding-top: 17%;
+    padding-left: 5%;
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url(Images/bg2.1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 95%; 
+    height: 70vh;
+}
+
+section .aimg{
+    background-color: rgba(193, 230, 120, 0.4);
+    border-radius: 20px;
+    width: 700px;
+    height: 50vh;
+    background-image: url(Images/aboutimg.png);
+    background-repeat: no-repeat;
+    background-size: 90%;
+}
+section .aboutme{
+    padding-top: 50px;
+    
+    color: red;
+}
+section .aboutme h1{
+    padding-top: -10%;   
+    padding-left: 40% ;
+    font-size: 5vh;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'Lobster', sans-serif;
+    text-transform: uppercase;
+}
+section .aboutme p{
+    padding-left: 25%;
+    padding-top: 30px;
+    padding-right: 105px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 2.7vh;
+    font-family: 'Exo 2', sans-serif;
+    text-shadow: black;
+}
+/*----------services---------*/
+
+#Services{
+    display: flex;
+    padding-top: 15%;
+    padding-left: 5%;
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url(Images/bg3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 95%; 
+    height: 75vh;
+}
+
+section .build{
+    background:url(Images/service.jpeg);
+    border-radius: 30px;
+    width: 200vh;
+    height: 85vh;
+    background-size: 130% ;
+    background-repeat: no-repeat;
+}
+section .Services{
+    padding-top: 50px;
+    color: red;
+}
+section .Services h1{
+    padding-top: -10%;   
+    padding-left: 45% ;
+    font-size: 5vh;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'Lobster', sans-serif;
+    text-transform: uppercase;
+}
+section .Services p{
+    padding-left: 25%;
+    padding-top: 35px;
+    padding-right: 105px;
+    color:black;
+    text-shadow: 2px 2px 4px goldenrod;
+    font-size: 2.7vh;
+    font-family: 'Exo 2', sans-serif;
+}
+/*--------Portfolio----------*/
+#Portfolio{
+    display: flex;
+    padding-top: 10%;
+    padding-left: 5%;
+    background:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.3)),url(Images/bg4.1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 95%; 
+    height: 75vh;
+}
+section .tile{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 340%;
+    font-family: Black Ops One;
+    text-shadow: black;
+}
+section .tile h1{
+    padding-left: 120px ;
+}
+.container{
+    width: 90%;
+    padding: 20px;
+    margin: 100px auto;	 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+section .box{
+    width: 270px;
+    margin: 0 65px;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 4);
+    transition: 1.5s;
+    border-radius: 15px;
+
+}
+section .box img{
+    display: block;
+    width:120%;
+    border-radius: 15px;
+    height: 30vh;
+}
+section .box:hover{
+    transform: scale(1.45);
+    z-index: 2;
+}

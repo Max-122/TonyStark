@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Lobster&family=Nunito+Sans:opsz,wght@6..12,800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Courgette&family=Lobster&family=Nunito+Sans:opsz,wght@6..12,800&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="Images/icon.png">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="#">
+                    <h3>Portfolio</h3>
+                </a></div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#About">About</a>
+                <a href="#Services">Services</a>
+                <a href="#Portfolio">Portfolio</a>
+                <a href="https://en.wikipedia.org/wiki/Iron_Man" target="_blank" rel="noooo">Page</a>
+                <a href="contact form/index.html" target="_blank" rel="noooo">contact</a>
+            </div>
+        </nav>
+        <main>
+            <section>
+                <div class="about">
+                    <h1>I'm Ironman...</h1>
+                    <br>
+                    <!--<h5><a href=> Click Here to Know me!</a></h5>-->
+                    <div class="image"></div>
+                </div>
+            </section>
+        </main>
+    </header>
+
+    <!----------about--------->
+    <section id="About">
+        <div class="aimg"></div>
+        <div class="aboutme">
+            <h1>About Me</h1>
+            <p>I'm a self-made billionaire, inventor, and CEO of Stark Industries, a cutting-edge technology and defense
+                company. My life has been a rollercoaster of highs and lows, but I've always strived for excellence.</p>
+        </div>
+    </section>
+    <!----------services--------->
+    <section id="Services">
+        <div class="build"></div>
+        <div class="Services">
+            <h1>Services</h1>
+            <p>Stark Industries was Founded by Howard Stark, the company specializes in cutting-edge innovations in
+                various fields, including advanced weaponry, aerospace, and clean energy technology. The most notable
+                figure associated with Stark Industries is Tony Stark, who becomes the armored superhero Iron Man. The
+                company plays a significant role in the Marvel Comics and cinematic universes, and its products often
+                have a profound impact on the world's security and technology landscape.</p>
+        </div>
+    </section>
+    <!----------portfolio--------->
+    <section id="Portfolio">
+        <div class="tile">
+            <h1>Here are my Projects</h1>
+            <div class="container">
+                <div class="box">
+                    <img src="Images/mark2.jpeg">
+                </div>
+                <div class="box">
+                    <img src="Images/mark3.jpeg">
+                </div>
+                <div class="box">
+                    <img src="Images/mark50.jpeg">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script>
+        ScrollReveal({
+            reset: true,
+            distance: '0px',
+            duration: 2500,
+            delay: 400
+        });
+        ScrollReveal().reveal('.aboutme h1,.aboutme p,.Services', { delay: 300, origin: 'left' });
+        ScrollReveal().reveal('.tile h1,.build,.aimg', { delay: 300, origin: 'top' });
+        ScrollReveal().reveal('main', { delay: 400, origin: 'buttom' });
+    </script>
+</body>
+
+</html>
